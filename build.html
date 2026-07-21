@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Công cụ hỗ trợ build PC với gợi ý linh kiện theo từng nhóm.">
+    <title>Build PC | SuperWebPC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html" aria-label="SuperWebPC home">
+          <span class="brand-badge">PC</span>
+          <span>SuperWebPC</span>
+        </a>
+        <button class="mobile-menu-toggle icon-btn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="components.html">Components</a>
+          <a href="build.html" class="active">Build PC</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" type="button" aria-label="Search components" onclick="window.location.href='components.html'">🔎</button>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-shell">
+      <div class="container build-layout">
+        <section class="build-panel" aria-labelledby="builder-title">
+          <div class="section-header">
+            <div>
+              <h1 id="builder-title" class="section-title">Trình xây dựng cấu hình</h1>
+              <p class="section-lead">Chọn từng nhóm linh kiện để tạo nên hệ thống hoàn chỉnh với kiểm tra tương thích tự động.</p>
+            </div>
+          </div>
+          <div class="build-controls" data-build-controls></div>
+        </section>
+        <aside class="info-panel" aria-label="Build summary">
+          <h2 class="section-title">Tóm tắt build</h2>
+          <div class="summary-card">
+            <strong>Tổng chi phí:</strong>
+            <div class="price" data-total-price>$0</div>
+          </div>
+          <div class="summary-card">
+            <strong>Tổng công suất:</strong>
+            <div class="price" data-total-power>0W</div>
+          </div>
+          <div class="summary-card">
+            <strong>Hiệu năng dự kiến:</strong>
+            <div class="price" data-performance>Chưa đủ dữ liệu</div>
+          </div>
+          <div class="summary-card">
+            <strong>Độ tương thích:</strong>
+            <div data-compatibility></div>
+          </div>
+          <div class="summary-card">
+            <strong>Danh sách linh kiện:</strong>
+            <div data-summary></div>
+          </div>
+          <div class="summary-card">
+            <strong>Recommended Builds:</strong>
+            <div class="preset-list" data-build-presets></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="SuperWebPC home">
+            <span class="brand-badge">PC</span>
+            <span>SuperWebPC</span>
+          </a>
+          <p class="small">Tạo cấu hình máy tính tối ưu cho học tập, làm việc và chơi game.</p>
+          <div class="footer-links">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer">YouTube</a>
+            <a href="mailto:support@superwebpc.com">Email</a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-nav-list">
+            <li><a href="components.html">Components</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-nav-list">
+            <li><a href="mailto:support@superwebpc.com">support@superwebpc.com</a></li>
+            <li><a href="tel:19001234">1900 1234</a></li>
+            <li><a href="contact.html">Đặt lịch tư vấn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p class="small">© 2026 SuperWebPC. Mọi quyền được bảo lưu.</p>
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑ Top</button>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/build.js"></script>
+  </body>
+</html>

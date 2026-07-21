@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với SuperWebPC để nhận tư vấn build PC và linh kiện.">
+    <title>Contact | SuperWebPC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html" aria-label="SuperWebPC home">
+          <span class="brand-badge">PC</span>
+          <span>SuperWebPC</span>
+        </a>
+        <button class="mobile-menu-toggle icon-btn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="components.html">Components</a>
+          <a href="build.html">Build PC</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" type="button" aria-label="Search components" onclick="window.location.href='components.html'">🔎</button>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-shell">
+      <div class="container build-layout">
+        <section class="build-panel" aria-labelledby="contact-title">
+          <h1 id="contact-title" class="section-title">Liên hệ với chúng tôi</h1>
+          <p class="section-lead">Để nhận tư vấn cấu hình hoặc hỗ trợ chọn linh kiện phù hợp, hãy gửi thông tin cho chúng tôi. Chúng tôi sẽ phản hồi trong vòng 24 giờ.</p>
+          <form class="form-grid" data-contact-form novalidate>
+            <div class="field-group">
+              <label for="name">Họ và tên</label>
+              <input id="name" name="name" type="text" placeholder="Nguyễn Văn An" required>
+            </div>
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field-group">
+              <label for="subject">Chủ đề</label>
+              <input id="subject" name="subject" type="text" placeholder="Tư vấn build gaming" required>
+            </div>
+            <div class="field-group">
+              <label for="message">Nội dung cần tư vấn</label>
+              <textarea id="message" name="message" rows="6" placeholder="Mô tả ngân sách, mục đích sử dụng và loại máy bạn muốn." required></textarea>
+            </div>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+            <button class="primary-btn" type="submit">Gửi liên hệ</button>
+          </form>
+        </section>
+        <aside class="info-panel" aria-label="Contact information">
+          <h2 class="section-title">Thông tin liên hệ</h2>
+          <div class="summary-card">
+            <strong>Email</strong>
+            <p class="small"><a href="mailto:jirovn2911@gmail.com">jirovn2911@gmail.com</a></p>
+          </div>
+          <div class="summary-card">
+            <strong>Hotline</strong>
+            <p class="small"><a href="tel:0335592297">0335592297</a></p>
+          </div>
+          <div class="summary-card">
+            <strong>Địa chỉ</strong>
+            <p class="small">Hà Đông, Hà Nội</p>
+          </div>
+          <div class="summary-card">
+            <strong>Thời gian làm việc</strong>
+            <p class="small">8:00 - 20:00, từ Thứ Hai đến Chủ nhật</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="SuperWebPC home">
+            <span class="brand-badge">PC</span>
+            <span>SuperWebPC</span>
+          </a>
+          <p class="small">Chuyên tư vấn và giới thiệu linh kiện máy tính cho mọi nhu cầu.</p>
+          <div class="footer-links">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer">YouTube</a>
+            <a href="mailto:support@superwebpc.com">Email</a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-nav-list">
+            <li><a href="components.html">Components</a></li>
+            <li><a href="build.html">Build PC</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-nav-list">
+            <li><a href="mailto:jirovn2911@gmail.com">jirovn2911@gmail.com</a></li>
+            <li><a href="tel:0335592297">0335592297</a></li>
+            <li><a href="contact.html">Đặt lịch tư vấn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p class="small">© 2026 SuperWebPC. Mọi quyền được bảo lưu.</p>
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑ Top</button>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

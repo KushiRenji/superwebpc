@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Danh mục linh kiện máy tính với tìm kiếm, lọc và thông tin chi tiết.">
+    <title>Components | SuperWebPC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html" aria-label="SuperWebPC home">
+          <span class="brand-badge">PC</span>
+          <span>SuperWebPC</span>
+        </a>
+        <button class="mobile-menu-toggle icon-btn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="components.html" class="active">Components</a>
+          <a href="build.html">Build PC</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" type="button" aria-label="Search components">🔎</button>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-shell">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h1 class="section-title">Danh mục linh kiện</h1>
+            <p class="section-lead">Tìm kiếm, lọc và xem chi tiết hàng trăm lựa chọn linh kiện hiện đại.</p>
+          </div>
+        </div>
+
+        <div class="catalog-shell">
+          <aside class="filters-panel" aria-label="Catalog filters">
+            <div class="section-header compact">
+              <div>
+                <h2 class="section-title">Filter &amp; Sort</h2>
+                <p class="section-lead">Tùy chỉnh theo ngân sách, thương hiệu và mục đích build.</p>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label>
+                <span class="small">Tìm kiếm</span>
+                <input type="search" data-component-search placeholder="Nhập tên, socket, chipset..." aria-label="Search components">
+              </label>
+              <label>
+                <span class="small">Phân loại</span>
+                <select data-category-filter aria-label="Filter by category">
+                  <option value="all">Tất cả</option>
+                  <option value="cpu">CPU</option>
+                  <option value="gpu">GPU</option>
+                  <option value="ram">RAM</option>
+                  <option value="ssd">SSD</option>
+                  <option value="hdd">HDD</option>
+                  <option value="motherboard">Mainboard</option>
+                  <option value="psu">PSU</option>
+                  <option value="case">Case</option>
+                  <option value="cooler">CPU Cooler</option>
+                  <option value="monitor">Monitor</option>
+                  <option value="keyboard">Keyboard</option>
+                  <option value="mouse">Mouse</option>
+                  <option value="headset">Headset</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">Sắp xếp</span>
+                <select data-sort>
+                  <option value="featured">Nổi bật</option>
+                  <option value="price-asc">Giá tăng dần</option>
+                  <option value="price-desc">Giá giảm dần</option>
+                  <option value="name-asc">Tên A-Z</option>
+                  <option value="name-desc">Tên Z-A</option>
+                  <option value="rating">Đánh giá cao nhất</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">Khoảng giá</span>
+                <select data-price-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="under-100">Dưới $100</option>
+                  <option value="100-300">$100 - $300</option>
+                  <option value="300-700">$300 - $700</option>
+                  <option value="700-plus">Trên $700</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">Thương hiệu</span>
+                <select data-brand-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="intel">Intel</option>
+                  <option value="amd">AMD</option>
+                  <option value="nvidia">NVIDIA</option>
+                  <option value="corsair">Corsair</option>
+                  <option value="samsung">Samsung</option>
+                  <option value="asus">ASUS</option>
+                  <option value="msi">MSI</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">Socket</span>
+                <select data-socket-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="lga1700">LGA1700</option>
+                  <option value="lga1851">LGA1851</option>
+                  <option value="am4">AM4</option>
+                  <option value="am5">AM5</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">DDR</span>
+                <select data-ddr-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="ddr4">DDR4</option>
+                  <option value="ddr5">DDR5</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">Platform</span>
+                <select data-platform-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="intel">Intel</option>
+                  <option value="amd">AMD</option>
+                  <option value="nvidia">NVIDIA</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">Form factor</span>
+                <select data-form-factor-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="atx">ATX</option>
+                  <option value="matx">mATX</option>
+                  <option value="itx">ITX</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">PCIe</span>
+                <select data-pcie-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="pcie-4">PCIe 4.0</option>
+                  <option value="pcie-5">PCIe 5.0</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">RAM capacity</span>
+                <select data-ram-capacity-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="16gb">16GB</option>
+                  <option value="32gb">32GB</option>
+                  <option value="64gb">64GB</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">SSD capacity</span>
+                <select data-ssd-capacity-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="1tb">1TB</option>
+                  <option value="2tb">2TB</option>
+                  <option value="4tb">4TB</option>
+                </select>
+              </label>
+              <label>
+                <span class="small">PSU power</span>
+                <select data-psu-power-filter>
+                  <option value="all">Tất cả</option>
+                  <option value="550w">550W</option>
+                  <option value="650w">650W</option>
+                  <option value="750w">750W</option>
+                  <option value="850w">850W</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="summary-card" data-compare-box>
+              <strong>So sánh</strong>
+              <p class="small">Chọn một linh kiện để xem thông tin nhanh.</p>
+            </div>
+            <div class="summary-card" data-build-box>
+              <strong>Build helper</strong>
+              <p class="small">Thêm linh kiện để tạo gợi ý tương thích cho hệ thống của bạn.</p>
+            </div>
+          </aside>
+
+          <section class="catalog-main">
+            <div class="catalog-toolbar">
+              <p class="small" data-result-count>Đang tải...</p>
+            </div>
+            <div class="card-grid" data-component-grid></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="SuperWebPC home">
+            <span class="brand-badge">PC</span>
+            <span>SuperWebPC</span>
+          </a>
+          <p class="small">Công cụ hỗ trợ build PC và lựa chọn linh kiện tối ưu.</p>
+          <div class="footer-links">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer">YouTube</a>
+            <a href="mailto:support@superwebpc.com">Email</a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="build.html">Build PC</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-nav-list">
+            <li><a href="mailto:support@superwebpc.com">support@superwebpc.com</a></li>
+            <li><a href="tel:19001234">1900 1234</a></li>
+            <li><a href="contact.html">Đặt lịch tư vấn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p class="small">© 2026 SuperWebPC. Mọi quyền được bảo lưu.</p>
+        <button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">↑ Top</button>
+      </div>
+    </footer>
+
+    <div class="modal-backdrop" data-detail-modal aria-hidden="true"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+  </body>
+</html>
